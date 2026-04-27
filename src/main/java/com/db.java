@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class db {
+public class Db {
     private static final Dotenv dotenv = Dotenv.load();
 
     private static final String URL = dotenv.get("DB_URL");
