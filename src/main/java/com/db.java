@@ -1,4 +1,4 @@
-package com.example.notes;
+package com;
 
 import io.github.cdimascio.dotenv.Dotenv;
 
@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class Db {
+public class db {
     private static final Dotenv dotenv = Dotenv.load();
 
     private static final String URL = dotenv.get("DB_URL");

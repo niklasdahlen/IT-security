@@ -1,10 +1,10 @@
-package com.example.notes;
+package com;
 
-public class Note {
+public class note {
     private final int id, userId;
     private final String username, title, content;
 
-    public Note(int id, int userId, String username, String title, String content) {
+    public note(int id, int userId, String username, String title, String content) {
         this.id = id; this.userId = userId; this.username = username;
         this.title = title; this.content = content;
     }
