@@ -1,4 +1,4 @@
-package com;
+package com.datamodell;
 
 public class Note {
     private final int id, userId;

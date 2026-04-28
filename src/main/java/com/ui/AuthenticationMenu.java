@@ -1,7 +1,10 @@
-package com;
+package com.ui;
 
 import java.sql.SQLException;
 import java.util.Optional;
+
+import com.dao.UserDao;
+import com.datamodell.User;
 
 public class AuthenticationMenu {
     private final ConsoleUi io;

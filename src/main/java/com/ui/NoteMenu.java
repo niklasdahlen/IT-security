@@ -1,7 +1,12 @@
-package com;
+package com.ui;
 
 import java.sql.SQLException;
 import java.util.Optional;
+
+import com.dao.NoteDao;
+import com.dao.UserDao;
+import com.datamodell.Note;
+import com.datamodell.User;
 
 public class NoteMenu {
     private final ConsoleUi io;

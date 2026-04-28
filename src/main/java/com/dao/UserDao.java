@@ -1,6 +1,9 @@
-package com;
+package com.dao;
 
 import org.mindrot.jbcrypt.BCrypt;
+
+import com.config.Db;
+import com.datamodell.User;
 
 import java.sql.*;
 

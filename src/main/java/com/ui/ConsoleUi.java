@@ -1,7 +1,9 @@
-package com;
+package com.ui;
 
 import java.util.List;
 import java.util.Scanner;
+
+import com.datamodell.Note;
 
 public class ConsoleUi {
     
