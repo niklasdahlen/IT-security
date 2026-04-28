@@ -2,6 +2,13 @@ package com;
 
 import java.sql.SQLException;
 
+import com.dao.NoteDao;
+import com.dao.UserDao;
+import com.datamodell.User;
+import com.ui.AuthenticationMenu;
+import com.ui.ConsoleUi;
+import com.ui.NoteMenu;
+
 public class Main {
     private final ConsoleUi io = new ConsoleUi();
     private final UserDao userDao = new UserDao();
@@ -32,7 +39,7 @@ public class Main {
         switch (io.ask("Val: ")) {
             case "1" -> current = auth.login();
             case "2" -> auth.register();
-            case "0" -> { io.info("Hej då!"); System.exit(0); }
+            case "0" -> { io.info("Program avslutat!"); System.exit(0); }
             default  -> io.error("Ogiltigt val");
         }
     }
@@ -44,7 +51,7 @@ public class Main {
     }
 
     private void adminMenu() throws SQLException {
-        io.info("\n== " + current.getUsername() + " (ADMIN) ==");
+        io.info("\n-- " + current.getUsername() + " (ADMIN) --");
         io.info("1) Skapa  2) Mina  3) Ändra  4) Radera  5) Byt lösen  6) Alla notes  9) Logga ut");
         String val = io.ask("Val: ");
         if (val.equals("6")) notes.listAll();

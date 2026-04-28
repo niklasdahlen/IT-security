@@ -1,9 +1,12 @@
-package com;
+package com.dao;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
+import com.config.Db;
+import com.datamodell.Note;
 
 public class NoteDao {
 

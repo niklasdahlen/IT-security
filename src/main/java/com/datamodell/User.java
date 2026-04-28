@@ -1,4 +1,4 @@
-package com;
+package com.datamodell;
 
 public class User {
     private final int id;
